@@ -1,442 +1,256 @@
-<!DOCTYPE html>
-<html lang="es">
+<!doctype html>
+<html lang=es>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hermanos de Sangre | Dexter & Brian</title>
-    
-    <!-- Fuentes de Google -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;600;700&family=Roboto+Condensed:wght@300;400;700&family=Cinzel:wght@400;700&display=swap" rel="stylesheet">
-    
-    <!-- Font Awesome Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
-    <!-- Nuestros estilos -->
-    <link rel="stylesheet" href="style.css">
+<meta charset=UTF-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<title>Hermanos de Sangre | Dexter & Brian</title>
+<link rel=preconnect href=https://fonts.googleapis.com>
+<link rel=preconnect href=https://fonts.gstatic.com crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;600;700&family=Roboto+Condensed:wght@300;400;700&family=Cinzel:wght@400;700&display=swap" rel=stylesheet>
+<link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css>
+<link rel=stylesheet href=style.css>
+<script src=script.js defer></script>
 </head>
 <body>
-    <!-- HERO SECTION -->
-    <header class="hero-section">
-        <div class="hero-content">
-            <h1 class="hero-title" id="glitch-title">HERMANOS DE SANGRE</h1>
-            <p class="hero-subtitle">UN LEGADO MARCADO POR LA SANGRE</p>
-            
-            <div class="hero-brothers">
-                <div class="hero-brother dexter">
-                    <div class="brother-image-container">
-                        <img src="https://i.pinimg.com/736x/f5/7a/48/f57a488199b84979c33c4d0c4360e4ba.jpg" 
-                             alt="Dexter Morgan" class="hero-brother-image">
-                        <div class="image-overlay"></div>
-                    </div>
-                    <h2 class="hero-brother-name">DEXTER MORGAN</h2>
-                    <span class="hero-brother-alias dexter-alias">"THE BAY HARBOR BUTCHER"</span>
-                </div>
-                
-                <div class="hero-brother brian">
-                    <div class="brother-image-container">
-                        <img src="https://i.pinimg.com/736x/e3/2c/58/e32c585645dcd14175ba6e00082b73e6.jpg" 
-                             alt="Brian Moser" class="hero-brother-image">
-                        <div class="image-overlay"></div>
-                    </div>
-                    <h2 class="hero-brother-name">BRIAN MOSER</h2>
-                    <span class="hero-brother-alias brian-alias">"THE ICE TRUCK KILLER"</span>
-                </div>
-            </div>
-        </div>
-        
-        <!-- Elementos decorativos -->
-        <div class="blood-drips" id="bloodDrips"></div>
-        <div class="plastic-overlay"></div>
-    </header>
-
-    <!-- NAVEGACIÓN -->
-    <nav class="main-nav" id="mainNav">
-        <div class="nav-container">
-            <a href="#hermanos" class="nav-link active">
-                <i class="fas fa-user-secret"></i> LOS HERMANOS
-            </a>
-            <a href="#trauma" class="nav-link">
-                <i class="fas fa-heart-broken"></i> EL TRAUMA
-            </a>
-            <a href="#codigo" class="nav-link">
-                <i class="fas fa-scroll"></i> EL CÓDIGO
-            </a>
-            <a href="#comparacion" class="nav-link">
-                <i class="fas fa-balance-scale"></i> COMPARACIÓN
-            </a>
-            <a href="#legado" class="nav-link">
-                <i class="fas fa-skull-crossbones"></i> LEGADO
-            </a>
-        </div>
-    </nav>
-
-    <!-- CONTENIDO PRINCIPAL -->
-    <main class="main-content">
-        
-        <!-- SECCIÓN: LOS HERMANOS -->
-        <section id="hermanos" class="content-section">
-            <h2 class="section-title">
-                <i class="fas fa-user-secret section-icon"></i>
-                LOS HERMANOS
-            </h2>
-            
-            <div class="brothers-grid">
-                <!-- DEXTER -->
-                <div class="brother-card dexter">
-                    <div class="blood-label">
-                        <i class="fas fa-tint"></i> BAY HARBOR BUTCHER
-                    </div>
-                    <div class="plastic-overlay-card"></div>
-                    
-                    <div class="brother-image-card">
-                        <img src="https://i.pinimg.com/736x/f5/7a/48/f57a488199b84979c33c4d0c4360e4ba.jpg" 
-                             alt="Dexter Morgan" class="brother-image">
-                        <div class="brother-image-overlay"></div>
-                    </div>
-                    
-                    <div class="brother-info">
-                        <h3 class="brother-name">DEXTER MORGAN</h3>
-                        <span class="brother-alias-card dexter-alias">"THE BAY HARBOR BUTCHER"</span>
-                        
-                        <p class="brother-description">
-                            Forense especializado en análisis de salpicaduras de sangre del Departamento de Policía de Miami. 
-                            Durante la noche, se convierte en un vigilante que ejecuta a criminales que han escapado de la justicia.
-                        </p>
-                        
-                        <div class="info-block">
-                            <h4 class="info-title">
-                                <i class="fas fa-brain"></i> PSICOLOGÍA
-                            </h4>
-                            <p class="info-content">
-                                Traumatizado en la infancia. Criado por Harry Morgan, quien canalizó sus impulsos 
-                                asesinos hacia un "código" que le permite matar solo a culpables confirmados.
-                            </p>
-                        </div>
-                        
-                        <div class="info-block">
-                            <h4 class="info-title">
-                                <i class="fas fa-balance-scale"></i> MÉTODO
-                            </h4>
-                            <p class="info-content">
-                                Sigue un ritual meticuloso: investigación exhaustiva, habitación forrada con plástico, 
-                                y finalmente una gota de sangre como trofeo. Todo bajo el "Código de Harry".
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- BRIAN -->
-                <div class="brother-card brian">
-                    <div class="blood-label brian-label">
-                        <i class="fas fa-snowflake"></i> ICE TRUCK KILLER
-                    </div>
-                    <div class="plastic-overlay-card"></div>
-                    
-                    <div class="brother-image-card">
-                        <img src="https://i.pinimg.com/736x/e3/2c/58/e32c585645dcd14175ba6e00082b73e6.jpg" 
-                             alt="Brian Moser" class="brother-image">
-                        <div class="brother-image-overlay"></div>
-                    </div>
-                    
-                    <div class="brother-info">
-                        <h3 class="brother-name">BRIAN MOSER</h3>
-                        <span class="brother-alias-card brian-alias">"THE ICE TRUCK KILLER"</span>
-                        
-                        <p class="brother-description">
-                            Hermano biológico mayor de Dexter. Un asesino en serie sofisticado que deja cuerpos 
-                            perfectamente diseccionados y drenados de sangre, exhibiéndolos como obras de arte macabras.
-                        </p>
-                        
-                        <div class="info-block">
-                            <h4 class="info-title">
-                                <i class="fas fa-heart-broken"></i> PSICOLOGÍA
-                            </h4>
-                            <p class="info-content">
-                                Comparte el mismo trauma infantil que Dexter, pero sin la influencia estabilizadora 
-                                del Código de Harry. Abraza completamente su naturaleza asesina.
-                            </p>
-                        </div>
-                        
-                        <div class="info-block">
-                            <h4 class="info-title">
-                                <i class="fas fa-crosshairs"></i> MÉTODO
-                            </h4>
-                            <p class="info-content">
-                                Drena completamente la sangre de sus víctimas, luego las disecciona con precisión 
-                                quirúrgica. Usa hielo para preservar los cuerpos, de ahí su apodo.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- SECCIÓN: EL TRAUMA -->
-        <section id="trauma" class="content-section trauma-section">
-            <h2 class="section-title">
-                <i class="fas fa-heart-broken section-icon"></i>
-                EL TRAUMA QUE LOS UNIÓ
-            </h2>
-            
-            <div class="trauma-content">
-                <div class="trauma-column">
-                    <div class="trauma-card">
-                        <div class="trauma-icon">
-                            <i class="fas fa-history"></i>
-                        </div>
-                        <h3 class="trauma-card-title">EL ORIGEN</h3>
-                        <p class="trauma-text">
-                            <strong>1973, contenedor frigorífico, Miami.</strong> Dos niños pequeños - 
-                            <span class="trauma-highlight">Brian (5 años)</span> y 
-                            <span class="trauma-highlight">Dexter (3 años)</span> - presenciaron 
-                            el brutal asesinato de su madre, <strong>Laura Moser</strong>, asesinada con una 
-                            motosierra por traficantes de drogas.
-                        </p>
-                    </div>
-                </div>
-                
-                <div class="trauma-column">
-                    <div class="trauma-card">
-                        <div class="trauma-icon">
-                            <i class="fas fa-tint"></i>
-                        </div>
-                        <h3 class="trauma-card-title">LOS DOS DÍAS</h3>
-                        <p class="trauma-text">
-                            Los hermanos permanecieron <strong>sentados en un charco de la sangre de su madre 
-                            durante dos días completos</strong>, hasta que fueron descubiertos por la policía. 
-                            Este evento los marcó para siempre, creando una conexión única con la sangre.
-                        </p>
-                    </div>
-                </div>
-                
-                <div class="trauma-column">
-                    <div class="trauma-card">
-                        <div class="trauma-icon">
-                            <i class="fas fa-code-branch"></i>
-                        </div>
-                        <h3 class="trauma-card-title">DESTINOS SEPARADOS</h3>
-                        <p class="trauma-text">
-                            <strong>Dexter</strong> fue adoptado por <strong>Harry Morgan</strong>, quien 
-                            descubrió sus instintos y creó el "Código" para controlarlos. 
-                            <strong>Brian</strong>, enviado a instituciones, desarrolló su naturaleza sin 
-                            restricciones. El mismo trauma, dos destinos diferentes.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="quote-card">
-                <p class="quote-text">
-                    "Somos hermanos, Dexter. Hermanos de sangre. Literalmente."
-                </p>
-                <p class="quote-author">- Brian Moser</p>
-            </div>
-        </section>
-
-        <!-- SECCIÓN: EL CÓDIGO -->
-        <section id="codigo" class="content-section code-section">
-            <h2 class="section-title">
-                <i class="fas fa-scroll section-icon"></i>
-                EL CÓDIGO DE HARRY
-            </h2>
-            
-            <p class="section-description">
-                Las reglas que Harry Morgan creó para controlar y dirigir los impulsos asesinos de Dexter. 
-                Lo que separa al vigilante del monstruo.
-            </p>
-            
-            <div class="code-grid">
-                <div class="code-rule">
-                    <div class="rule-number">1</div>
-                    <h3 class="rule-title">NO SER DESCUBIERTO</h3>
-                    <p class="rule-description">La regla más importante. Todo sacrificio es válido para mantener el secreto. La supervivencia depende del anonimato absoluto.</p>
-                </div>
-                
-                <div class="code-rule">
-                    <div class="rule-number">2</div>
-                    <h3 class="rule-title">CERTEZA ABSOLUTA</h3>
-                    <p class="rule-description">Investigación minuciosa. Pruebas contundentes. Asegurarse más allá de toda duda de que el objetivo es culpable y ha escapado a la justicia.</p>
-                </div>
-                
-                <div class="code-rule">
-                    <div class="rule-number">3</div>
-                    <h3 class="rule-title">NO INOCENTES</h3>
-                    <p class="rule-description">Nunca matar a alguien que no lo merece. A menos que sea absolutamente necesario para no violar la primera regla.</p>
-                </div>
-                
-                <div class="code-rule">
-                    <div class="rule-number">4</div>
-                    <h3 class="rule-title">EL RITUAL</h3>
-                    <p class="rule-description">Siempre seguir el protocolo: investigación, habitación con plástico, el cuchillo, la gota de sangre en el portaobjetos. El orden da control.</p>
-                </div>
-                
-                <div class="code-rule">
-                    <div class="rule-number">5</div>
-                    <h3 class="rule-title">MANTENER LA MÁSCARA</h3>
-                    <p class="rule-description">Construir y mantener una vida normal. Familia, amigos, trabajo. La máscara social es la primera línea de defensa.</p>
-                </div>
-                
-                <div class="code-rule">
-                    <div class="rule-number">6</div>
-                    <h3 class="rule-title">CONTROL DEL IMPULSO</h3>
-                    <p class="rule-description">Reconocer el "Dark Passenger", pero no dejar que tome el control. Usar el código como riendas para el monstruo interior.</p>
-                </div>
-            </div>
-            
-            <div class="difference-card">
-                <h3 class="difference-title">
-                    <i class="fas fa-exclamation-triangle"></i>
-                    LA DIFERENCIA FUNDAMENTAL
-                </h3>
-                <p class="difference-text">
-                    <strong>Dexter sigue el código.</strong> Brian lo rechaza completamente. 
-                    Mientras Dexter se ve a sí mismo como un "vigilante" con propósito moral, Brian se ve como un 
-                    "artista" que expresa su verdadera naturaleza sin restricciones. 
-                    Esta diferencia filosófica es el corazón de su conflicto.
-                </p>
-            </div>
-        </section>
-
-        <!-- COMPARACIÓN -->
-        <section id="comparacion" class="content-section comparison-section">
-            <h2 class="section-title">
-                <i class="fas fa-balance-scale section-icon"></i>
-                COMPARACIÓN
-            </h2>
-            
-            <div class="comparison-grid">
-                <div class="comparison-column dexter">
-                    <div class="comparison-header">
-                        <h3 class="comparison-name" style="color: var(--fresh-blood);">DEXTER MORGAN</h3>
-                        <span class="brother-alias-card dexter-alias">"THE BAY HARBOR BUTCHER"</span>
-                    </div>
-                    
-                    <ul class="comparison-list">
-                        <li><strong>Misión:</strong> Eliminar criminales que escapan de la justicia</li>
-                        <li><strong>Código:</strong> Sigue estrictamente las reglas de Harry</li>
-                        <li><strong>Método:</strong> Ritualístico, con propósito moral</li>
-                        <li><strong>Visión:</strong> Vigilante con código</li>
-                        <li><strong>Objetivo:</strong> Redención a través del control</li>
-                        <li><strong>Relaciones:</strong> Busca conexiones genuinas</li>
-                        <li><strong>Dark Passenger:</strong> Controlado, canalizado</li>
-                    </ul>
-                </div>
-                
-                <div class="comparison-column brian">
-                    <div class="comparison-header">
-                        <h3 class="comparison-name" style="color: #00a8ff;">BRIAN MOSER</h3>
-                        <span class="brother-alias-card brian-alias">"THE ICE TRUCK KILLER"</span>
-                    </div>
-                    
-                    <ul class="comparison-list">
-                        <li><strong>Misión:</strong> Expresar su arte a través de la muerte</li>
-                        <li><strong>Código:</strong> Lo rechaza completamente</li>
-                        <li><strong>Método:</strong> Artístico, por placer puro</li>
-                        <li><strong>Visión:</strong> Artista sin restricciones</li>
-                        <li><strong>Objetivo:</strong> Autenticidad a través de la libertad</li>
-                        <li><strong>Relaciones:</strong> Solo conecta con Dexter</li>
-                        <li><strong>Dark Passenger:</strong> Abrazado, celebrado</li>
-                    </ul>
-                </div>
-            </div>
-            
-            <div class="quote-card">
-                <p class="quote-text">
-                    "¿Qué somos, Dexter? ¿Monstruos? Tal vez. Pero yo soy un monstruo libre. Tú eres un monstruo con correa."
-                </p>
-                <p class="quote-author">- Brian Moser</p>
-            </div>
-        </section>
-
-        <!-- LEGADO -->
-        <section id="legado" class="content-section legacy-section">
-            <h2 class="section-title">
-                <i class="fas fa-skull-crossbones section-icon"></i>
-                LEGADO DE SANGRE
-            </h2>
-            
-            <div class="legacy-content">
-                <div class="legacy-card">
-                    <h3 class="legacy-title">
-                        <i class="fas fa-question-circle"></i>
-                        EL DILEMA ETERNO
-                    </h3>
-                    <p class="legacy-text">
-                        La tragedia de los hermanos Moser plantea la pregunta fundamental: 
-                        <span class="legacy-highlight">¿Es mejor un monstruo con reglas o un hombre libre que acepta su oscuridad?</span>
-                    </p>
-                </div>
-                
-                <div class="legacy-card">
-                    <h3 class="legacy-title">
-                        <i class="fas fa-road"></i>
-                        DOS CAMINOS, UNA SANGRE
-                    </h3>
-                    <p class="legacy-text">
-                        Dexter eligió las cadenas del código, convirtiéndose en un ángel de la muerte con propósito. 
-                        Brian eligió la libertad de la autenticidad, convirtiéndose en un artista del horror. 
-                        Ambos nacieron de la misma sangre, marcados por el mismo trauma.
-                    </p>
-                </div>
-                
-                <div class="legacy-card">
-                    <h3 class="legacy-title">
-                        <i class="fas fa-infinity"></i>
-                        CONEXIÓN ETERNA
-                    </h3>
-                    <p class="legacy-text">
-                        Aunque Dexter mató a Brian para salvar a Debra, su hermano nunca lo abandonó. 
-                        Aparece en sus sueños, en sus momentos de duda, como un recordatorio constante de lo que podría haber sido...
-                    </p>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <!-- FOOTER -->
-    <footer class="main-footer">
-        <div class="footer-content">
-            <h3 class="footer-title">HERMANOS DE SANGRE</h3>
-            <p class="footer-text">
-                Un estudio sobre el trauma, la naturaleza humana y las decisiones que definen si somos monstruos con reglas 
-                o hombres libres en la oscuridad. Dexter y Brian: dos caminos, una sangre.
-            </p>
-            
-            <div class="footer-brothers">
-                <div class="footer-brother">
-                    <h4 class="footer-brother-name">DEXTER MORGAN</h4>
-                    <p class="footer-brother-alias">THE BAY HARBOR BUTCHER</p>
-                </div>
-                
-                <div class="footer-divider"></div>
-                
-                <div class="footer-brother">
-                    <h4 class="footer-brother-name">BRIAN MOSER</h4>
-                    <p class="footer-brother-alias">THE ICE TRUCK KILLER</p>
-                </div>
-            </div>
-            
-            <div class="footer-quote">
-                <p class="quote-text">
-                    "Mi Dark Passenger y yo estamos de acuerdo en una cosa..."
-                </p>
-                <p class="quote-author">- Dexter Morgan</p>
-            </div>
-            
-            <p class="footer-copyright">
-                © 2023 Hermanos de Sangre | Análisis de los personajes de Dexter
-            </p>
-        </div>
-    </footer>
-
-    <!-- BOTÓN SCROLL TOP -->
-    <button class="scroll-top" id="scrollTop" aria-label="Volver arriba">
-        <i class="fas fa-chevron-up"></i>
-    </button>
-
-    <!-- JavaScript -->
-    <script src="script.js"></script>
+<header class=hero-section>
+<h1 class=hero-title id=glitch-title>HERMANOS DE SANGRE</h1>
+<p class=hero-subtitle>UN LEGADO MARCADO POR LA SANGRE</p>
+<div class=hero-brothers>
+<div class="hero-brother dexter">
+<img src=https://i.pinimg.com/736x/f5/7a/48/f57a488199b84979c33c4d0c4360e4ba.jpg alt="Dexter Morgan" class=hero-brother-image>
+<h2 class=hero-brother-name>DEXTER MORGAN</h2>
+<span class="hero-brother-alias dexter-alias">"THE BAY HARBOR BUTCHER"</span>
+</div>
+<div class="hero-brother brian">
+<img src=https://i.pinimg.com/736x/e3/2c/58/e32c585645dcd14175ba6e00082b73e6.jpg alt="Brian Moser" class=hero-brother-image>
+<h2 class=hero-brother-name>BRIAN MOSER</h2>
+<span class="hero-brother-alias brian-alias">"THE ICE TRUCK KILLER"</span>
+</div>
+</div>
+</header>
+<nav class=main-nav>
+<div class=nav-container>
+<a href=#hermanos class="nav-link active">LOS HERMANOS</a>
+<a href=#trauma class=nav-link>EL TRAUMA</a>
+<a href=#codigo class=nav-link>EL CÓDIGO</a>
+<a href=#comparacion class=nav-link>COMPARACIÓN</a>
+<a href=#legado class=nav-link>LEGADO</a>
+</div>
+</nav>
+<main class=main-content>
+<section id=hermanos class=content-section>
+<h2 class=section-title>LOS HERMANOS</h2>
+<div class=brothers-grid>
+<div class="brother-card dexter">
+<img src=https://i.pinimg.com/736x/9d/12/73/9d12732e7b09328c37783c17347d8cb2.jpg alt="Dexter Morgan" class=brother-image>
+<div class=brother-info>
+<h3 class=brother-name>DEXTER MORGAN</h3>
+<span class="brother-alias-card dexter-alias">"THE BAY HARBOR BUTCHER"</span>
+<p class=brother-description>
+Forense especializado en análisis de salpicaduras de sangre del Departamento de Policía de Miami. Durante la noche, se convierte en un vigilante que ejecuta a criminales que han escapado de la justicia.
+</p>
+<ul class=brother-features>
+<li>Forense del Departamento de Policía de Miami</li>
+<li>Sigue el "Código de Harry" estrictamente</li>
+<li>Mantiene una doble vida perfecta</li>
+<li>Usa rituales meticulosos para sus ejecuciones</li>
+<li>Colecciona gotas de sangre como trofeos</li>
+</ul>
+</div>
+</div>
+<div class="brother-card brian">
+<img src=https://i.pinimg.com/736x/e3/2c/58/e32c585645dcd14175ba6e00082b73e6.jpg alt="Brian Moser" class=brother-image>
+<div class=brother-info>
+<h3 class=brother-name>BRIAN MOSER</h3>
+<span class="brother-alias-card brian-alias">"THE ICE TRUCK KILLER"</span>
+<p class=brother-description>
+Hermano biológico mayor de Dexter. Un asesino en serie sofisticado que deja cuerpos perfectamente diseccionados y drenados de sangre, exhibiéndolos como obras de arte macabras.
+</p>
+<ul class=brother-features>
+<li>Cirujano plástico de profesión</li>
+<li>Rechaza completamente cualquier código moral</li>
+<li>Ve el asesinato como una forma de arte</li>
+<li>Drena completamente la sangre de sus víctimas</li>
+<li>Deja pistas elaboradas para Dexter</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<section id=trauma class=content-section>
+<h2 class=section-title>EL TRAUMA QUE LOS UNIÓ</h2>
+<div class=trauma-grid>
+<div class=trauma-card>
+<h3 class=trauma-card-title>
+<i class="fas fa-history"></i> EL ORIGEN
+</h3>
+<p class=trauma-text>
+<strong>1973, contenedor frigorífico, Miami.</strong> Dos niños pequeños -
+<span class=trauma-highlight>Brian (5 años)</span> y
+<span class=trauma-highlight>Dexter (3 años)</span> - presenciaron el brutal asesinato de su madre, <strong>Laura Moser</strong>, asesinada con una motosierra por traficantes de drogas.
+</p>
+</div>
+<div class=trauma-card>
+<h3 class=trauma-card-title>
+<i class="fas fa-tint"></i> LOS DOS DÍAS
+</h3>
+<p class=trauma-text>
+Los hermanos permanecieron <strong>sentados en un charco de la sangre de su madre durante dos días completos</strong>, hasta que fueron descubiertos por la policía. Este evento los marcó para siempre, creando una conexión única con la sangre y despertando sus impulsos asesinos.
+</p>
+</div>
+<div class=trauma-card>
+<h3 class=trauma-card-title>
+<i class="fas fa-code-branch"></i> DESTINOS SEPARADOS
+</h3>
+<p class=trauma-text>
+<strong>Dexter</strong> fue adoptado por <strong>Harry Morgan</strong>, quien descubrió sus instintos y creó el "Código" para controlarlos.
+<strong>Brian</strong>, enviado a instituciones, desarrolló su naturaleza sin restricciones. El mismo trauma, dos destinos diferentes.
+</p>
+</div>
+</div>
+<div class=quote-card>
+<p class=quote-text>
+"Somos hermanos, Dexter. Hermanos de sangre. Literalmente."
+</p>
+<p class=quote-author>- Brian Moser</p>
+</div>
+</section>
+<section id=codigo class=content-section>
+<h2 class=section-title>EL CÓDIGO DE HARRY</h2>
+<p class=section-description>
+Las reglas que Harry Morgan creó para controlar y dirigir los impulsos asesinos de Dexter. Lo que separa al vigilante del monstruo.
+</p>
+<div class=code-grid>
+<div class=code-rule>
+<div class=rule-number>1</div>
+<h3 class=rule-title>NO SER DESCUBIERTO</h3>
+<p class=rule-description>La regla más importante. Todo sacrificio es válido para mantener el secreto. La supervivencia depende del anonimato absoluto.</p>
+</div>
+<div class=code-rule>
+<div class=rule-number>2</div>
+<h3 class=rule-title>CERTEZA ABSOLUTA</h3>
+<p class=rule-description>Investigación minuciosa. Pruebas contundentes. Asegurarse más allá de toda duda de que el objetivo es culpable y ha escapado a la justicia.</p>
+</div>
+<div class=code-rule>
+<div class=rule-number>3</div>
+<h3 class=rule-title>NO INOCENTES</h3>
+<p class=rule-description>Nunca matar a alguien que no lo merece. A menos que sea absolutamente necesario para no violar la primera regla.</p>
+</div>
+<div class=code-rule>
+<div class=rule-number>4</div>
+<h3 class=rule-title>EL RITUAL</h3>
+<p class=rule-description>Siempre seguir el protocolo: investigación, habitación con plástico, el cuchillo, la gota de sangre en el portaobjetos. El orden da control.</p>
+</div>
+<div class=code-rule>
+<div class=rule-number>5</div>
+<h3 class=rule-title>MANTENER LA MÁSCARA</h3>
+<p class=rule-description>Construir y mantener una vida normal. Familia, amigos, trabajo. La máscara social es la primera línea de defensa.</p>
+</div>
+<div class=code-rule>
+<div class=rule-number>6</div>
+<h3 class=rule-title>CONTROL DEL IMPULSO</h3>
+<p class=rule-description>Reconocer el "Dark Passenger", pero no dejar que tome el control. Usar el código como riendas para el monstruo interior.</p>
+</div>
+</div>
+<div class=difference-card>
+<h3 class=difference-title>LA DIFERENCIA FUNDAMENTAL</h3>
+<p class=difference-text>
+<strong>Dexter sigue el código.</strong> Brian lo rechaza completamente. Mientras Dexter se ve a sí mismo como un "vigilante" con propósito moral, Brian se ve como un "artista" que expresa su verdadera naturaleza sin restricciones. Esta diferencia filosófica es el corazón de su conflicto.
+</p>
+</div>
+</section>
+<section id=comparacion class=content-section>
+<h2 class=section-title>COMPARACIÓN</h2>
+<div class=comparison-grid>
+<div class="comparison-column dexter">
+<div class=comparison-header>
+<h3 class=comparison-name>DEXTER MORGAN</h3>
+<span class="brother-alias-card dexter-alias">"THE BAY HARBOR BUTCHER"</span>
+</div>
+<ul class=comparison-list>
+<li><strong>Misión:</strong> Eliminar criminales que escapan de la justicia</li>
+<li><strong>Código:</strong> Sigue estrictamente las reglas de Harry</li>
+<li><strong>Método:</strong> Ritualístico, con propósito moral</li>
+<li><strong>Visión:</strong> Vigilante con código</li>
+<li><strong>Objetivo:</strong> Redención a través del control</li>
+<li><strong>Relaciones:</strong> Busca conexiones genuinas</li>
+<li><strong>Dark Passenger:</strong> Controlado, canalizado</li>
+</ul>
+</div>
+<div class="comparison-column brian">
+<div class=comparison-header>
+<h3 class=comparison-name>BRIAN MOSER</h3>
+<span class="brother-alias-card brian-alias">"THE ICE TRUCK KILLER"</span>
+</div>
+<ul class=comparison-list>
+<li><strong>Misión:</strong> Expresar su arte a través de la muerte</li>
+<li><strong>Código:</strong> Lo rechaza completamente</li>
+<li><strong>Método:</strong> Artístico, por placer puro</li>
+<li><strong>Visión:</strong> Artista sin restricciones</li>
+<li><strong>Objetivo:</strong> Autenticidad a través de la libertad</li>
+<li><strong>Relaciones:</strong> Solo conecta con Dexter</li>
+<li><strong>Dark Passenger:</strong> Abrazado, celebrado</li>
+</ul>
+</div>
+</div>
+<div class=quote-card>
+<p class=quote-text>
+"¿Qué somos, Dexter? ¿Monstruos? Tal vez. Pero yo soy un monstruo libre. Tú eres un monstruo con correa."
+</p>
+<p class=quote-author>- Brian Moser</p>
+</div>
+</section>
+<section id=legado class=content-section>
+<h2 class=section-title>LEGADO DE SANGRE</h2>
+<div class=legacy-grid>
+<div class=legacy-card>
+<h3 class=legacy-title>EL DILEMA ETERNO</h3>
+<p class=legacy-text>
+La tragedia de los hermanos Moser plantea la pregunta fundamental:
+<span class=legacy-highlight>¿Es mejor un monstruo con reglas o un hombre libre que acepta su oscuridad?</span>
+</p>
+</div>
+<div class=legacy-card>
+<h3 class=legacy-title>DOS CAMINOS, UNA SANGRE</h3>
+<p class=legacy-text>
+Dexter eligió las cadenas del código, convirtiéndose en un ángel de la muerte con propósito. Brian eligió la libertad de la autenticidad, convirtiéndose en un artista del horror. Ambos nacieron de la misma sangre, marcados por el mismo trauma, pero tomaron caminos radicalmente diferentes.
+</p>
+</div>
+<div class=legacy-card>
+<h3 class=legacy-title>CONEXIÓN ETERNA</h3>
+<p class=legacy-text>
+Aunque Dexter mató a Brian para salvar a Debra, su hermano nunca lo abandonó. Aparece en sus sueños, en sus momentos de duda, como un recordatorio constante de lo que podría haber sido... y de lo que aún podría ser si alguna vez decide quitarse las cadenas.
+</p>
+</div>
+</div>
+</section>
+</main>
+<footer class=main-footer>
+<h3 class=footer-title>HERMANOS DE SANGRE</h3>
+<p class=footer-text>
+Un estudio sobre el trauma, la naturaleza humana y las decisiones que definen si somos monstruos con reglas o hombres libres en la oscuridad. Dexter y Brian: dos caminos, una sangre.
+</p>
+<div class=footer-brothers>
+<div class=footer-brother>
+<h4 class=footer-brother-name>DEXTER MORGAN</h4>
+<p class=footer-brother-alias>THE BAY HARBOR BUTCHER</p>
+</div>
+<div class=footer-divider></div>
+<div class=footer-brother>
+<h4 class=footer-brother-name>BRIAN MOSER</h4>
+<p class=footer-brother-alias>THE ICE TRUCK KILLER</p>
+</div>
+</div>
+<p class=footer-quote>
+"Mi Dark Passenger y yo estamos de acuerdo en una cosa..."<br>
+- Dexter Morgan
+</p>
+<p class=footer-copyright>
+© 2026 Hermanos de Sangre | Análisis de los personajes de Dexter - Serie de Showtime basada en las novelas de Jeff Lindsay
+</p>
+</footer>
+<button class=scroll-top id=scrollTop>
+<i class="fas fa-chevron-up"></i>
+</button>
 </body>
 </html>
